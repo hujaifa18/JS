@@ -31,3 +31,25 @@ const myFunction = Function()
     
 }
 console.log(typeof myFunction);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Primitive)
+console.log("                  Stack Memory");
+
+let firstName = "Abid Hasan"
+let handle = firstName
+handle = "Hujaifa"
+console.table([firstName,handle])
+
+//Heap(Non Primitive)
+console.log("                  Heap Memory");
+
+let userOne = {
+    email : "abidhasan@12",
+    id : 18,
+}
+let userTwo = userOne
+userTwo.email = "Hujaifa@013"
+console.table([userOne.email,userTwo.email])
